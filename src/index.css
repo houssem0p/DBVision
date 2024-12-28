@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.fadeIn {
+  transition: opacity 1s, transform 1s;
+  opacity: 0;
+}
+
+.opacity-100 {
+  opacity: 1 !important;
+}
+
+.animate-bottom-to-top {
+  transform: translateY(0) !important;
+}
+
+.animate-top-to-bottom {
+  transform: translateY(0) !important;
+}
+
+.fadeIn:not(.animate-bottom-to-top) {
+  transform: translateY(50px); /* Bottom to Top Initial */
+}
+
+.fadeIn:not(.animate-top-to-bottom) {
+  transform: translateY(-50px); /* Top to Bottom Initial */
+}
+
+
+/* Glowing effect for the side lights */
