@@ -80,6 +80,7 @@ app.post('/api/login', async (req, res) => {
     res.status(500).json({ success: false, message: 'Unable to connect to the database.' });
   }
 });
+
 // API endpoint to fetch blocked queries
 app.get('/api/blocked-queries', async (req, res) => {
   const { host, username, password, database } = req.query;
@@ -330,6 +331,7 @@ app.get('/api/network-traffic', async (req, res) => {
     res.status(500).json({ success: false, message: 'Unable to fetch network traffic.' });
   }
 });
+
 // API endpoint to fetch database metrics
 app.get('/api/database-metrics', async (req, res) => {
   const { host, username, password, database } = req.query;
@@ -458,6 +460,7 @@ app.get('/api/sgbd-overview', async (req, res) => {
     res.status(500).json({ success: false, message: error.message });
   }
 });
+
 // API endpoint to fetch databases
 app.get('/api/databases', async (req, res) => {
   const { host, username, password } = req.query;
@@ -478,6 +481,7 @@ app.get('/api/databases', async (req, res) => {
     res.status(500).json({ success: false, message: 'Unable to fetch databases.' });
   }
 });
+
 // Start the server
 app.listen(5000, () => {
   console.log('Server is running on port 5000');
