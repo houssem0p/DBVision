@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+### DBVision - Interface de Monitoring pour les Systèmes de Gestion de Base de Données (SGBD)
+# Description
+DBVision est une application de monitoring pour surveiller les performances des Systèmes de Gestion de Base de Données (SGBD). Elle offre une interface intuitive permettant de se connecter à un SGBD, d’afficher des métriques clés comme l’utilisation du CPU, de la mémoire, les événements d'attente et bien plus encore.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Prérequis
+Node.js
+NPM (Node Package Manager)
+Un SGBD (par exemple, MySQL ou PostgreSQL) pour connecter l'application
 
-## Available Scripts
+# Cloner le projet
+Pour récupérer le projet depuis GitHub, vous devez d'abord cloner le dépôt :
+https://github.com/houssem0p/DBVision.git
 
-In the project directory, you can run:
+Ensuite, accédez au dossier du projet cloné :
+cd dbvision
+# Installation
 
-### `npm start`
+Étapes d'installation pour le front-end :
+Accédez au dossier front :
+cd front
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Installez les dépendances nécessaires :
+npm install react-apexcharts react-router-dom framer-motion axios websocket
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Démarrez l'application front-end :
+npm start
 
-### `npm test`
+Cela lancera l'interface utilisateur sur http://localhost:3000.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Étapes d'installation pour le back-end :
+Accédez au dossier server :
+cd server
 
-### `npm run build`
+Installez les dépendances nécessaires pour le serveur :
+npm install express axios websocket
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Démarrez le serveur :
+node server.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Cela démarrera le serveur API sur http://localhost:5000.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Fonctionnalités
+Connexion au SGBD : L'utilisateur peut se connecter à un SGBD avec des identifiants sécurisés.
+Tableaux de bord personnalisés : Affichage des performances du SGBD avec des métriques détaillées comme l'utilisation du CPU, la mémoire, et plus encore.
+Métriques en temps réel : Affichage dynamique des métriques en temps réel.
+Graphiques interactifs : Visualisation des performances avec des graphiques générés par React ApexCharts.
+Utilisation
+Lancez le back-end et le front-end comme expliqué ci-dessus.
+Accédez à la page de connexion et entrez vos identifiants de SGBD.
+Explorez le tableau de bord pour visualiser les métriques de votre SGBD.
+Utilisez les graphiques et les tableaux pour analyser la performance de votre système.
+# Technologies utilisées
+Front-end : React, React Router, React ApexCharts, Tailwind CSS, Framer Motion, Axios
+Back-end : Node.js, Express, WebSocket
+Base de données : MySQL, PostgreSQL (selon le choix de l'utilisateur)
+Auteurs
+### Houssem Eddine Belaid 222239410206
