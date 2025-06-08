@@ -54,4 +54,4 @@ Front-end : React, React Router, React ApexCharts, Tailwind CSS, Framer Motion, 
 Back-end : Node.js, Express, WebSocket
 Base de données : MySQL, PostgreSQL (selon le choix de l'utilisateur)
 Auteurs
-### Houssem Eddine Belaid 222239410206
+ 
